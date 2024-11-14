@@ -1,0 +1,33 @@
+.header{
+    &__header-bar{
+        background-color: #fff;
+        border-radius: 32px;
+        box-shadow: 0 0 10px rgba(0,0,0,.2);
+    }
+    &__header-nav{
+        ul{
+            list-style: none;
+        }
+        li{
+            color: #000;
+            padding-right: 32px;
+        }
+        a{
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+    &__social-media{
+        ul{
+            list-style: none;
+        }
+        li{
+            color: #000;
+            padding-left: 16px;
+        }
+        a{
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+}

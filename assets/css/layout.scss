@@ -1,16 +1,37 @@
-.header{
+.header {
     width: 100%;
     padding: 16px 24px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
-    background-color: green;
+
+    &__header-bar {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 32px;
+
+    }
+
+    &__header-nav {
+        li {
+            display: inline-block;
+        }
+    }
+
+    &__social-media {
+        li {
+            display: inline-block;
+        }
+    }
 }
-.wrapper{
+
+.wrapper {
     width: 100%;
     max-width: 1100px;
-    background-color: red;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
