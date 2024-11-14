@@ -146,16 +146,32 @@ div, section, article, aside, footer, header, h1, h2, h3, h4, h5, h6, p, a, span
 .home__title {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-weight: 600;
-  font-size: 64px;
-  padding: 32px 32px 16px;
+  font-size: 32px;
+  padding: 24px 32px 8px;
   margin: 0;
+}
+@media screen and (min-width: 1440px) {
+  .home__title {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 64px;
+    padding: 32px 32px 16px;
+  }
 }
 .home__subtitle {
   color: #2688EC;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-weight: 500;
-  font-size: 32px;
-  padding: 0 32px 32px;
+  font-size: 20px;
+  padding: 0 32px 24px;
+}
+@media screen and (min-width: 1440px) {
+  .home__subtitle {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    padding: 0px 32px 32px;
+  }
 }
 .home__button {
   padding: 16px 32px;
@@ -167,8 +183,14 @@ div, section, article, aside, footer, header, h1, h2, h3, h4, h5, h6, p, a, span
   text-decoration: none;
   background-color: #22c022;
   border: none;
-  margin-left: 32px;
-  margin-top: 64px;
+  margin-left: 28px;
+  margin-top: 32px;
+}
+@media screen and (min-width: 1360px) {
+  .home__button {
+    margin-left: 32px;
+    margin-top: 64px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

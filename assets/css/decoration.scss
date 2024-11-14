@@ -52,14 +52,22 @@
     background-attachment: fixed;
 
     &__title{
-        @include montserrat(600, 64px);
-        padding: 32px 32px 16px;
+        @include montserrat(600, 32px);
+        padding: 24px 32px 8px;
         margin: 0;
+        @include full{
+            @include montserrat(600, 64px);
+            padding: 32px 32px 16px;
+        }
     }
     &__subtitle{
         color: #2688EC;
-        @include montserrat(500, 32px);
-        padding: 0 32px 32px;
+        @include montserrat(500, 20px);
+        padding: 0 32px 24px;
+        @include full{
+            @include montserrat(500, 32px);
+            padding: 0px 32px 32px;
+        }
     }
     &__button{
         padding: 16px 32px;
@@ -69,7 +77,11 @@
         text-decoration: none;
         background-color: #22c022;
         border: none;
-        margin-left: 32px;
-        margin-top: 64px;
+        margin-left: 28px;
+        margin-top: 32px;
+        @include desktop{
+            margin-left: 32px;
+            margin-top: 64px;
+        }
     }
 }
