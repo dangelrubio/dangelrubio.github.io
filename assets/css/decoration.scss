@@ -83,5 +83,21 @@
             margin-left: 32px;
             margin-top: 64px;
         }
+        transition: all 200ms ease-in-out;
+        &:hover{
+            background-color: #791a9e;
+        }
+    }
+}
+.intro{
+    &__text{
+        @include montserrat(500, 22px);
+        line-height: 32px;
+        padding-bottom: 48px;
+        width: 70%;
+    }
+    strong{
+        @include montserrat(600, 22px);
+        color: #2688EC;
     }
 }

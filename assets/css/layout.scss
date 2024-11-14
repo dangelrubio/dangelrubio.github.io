@@ -6,6 +6,7 @@
     justify-content: flex-start;
     align-items: center;
     position: fixed;
+    z-index: 9999;
 
     &__header-bar {
         width: 100%;
@@ -54,6 +55,8 @@
 }
 .home{
     height: 100vh;
+    position: sticky;
+    top: 0;
     background-color: blue;
     width: 100%;
     display: flex;
@@ -71,6 +74,23 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+    }
+}
+.intro{
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+    background-color: #fff;
+    .wrapper{
+        align-items: flex-start;
+    }
+    &__text{
+        padding-left: 32px;
     }
 }
 .wrapper {

@@ -4,5 +4,8 @@
 .main-canvas{
     width: 100%;
 }
+html, body{
+    scroll-behavior: smooth;
+}
 @import 'layout';
 @import 'decoration';
