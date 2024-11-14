@@ -44,3 +44,32 @@
         }
     }
 }
+.home{
+    background-image: url('assets/img/fondoweb.png');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    &__title{
+        @include montserrat(600, 64px);
+        padding: 32px 32px 16px;
+        margin: 0;
+    }
+    &__subtitle{
+        color: #2688EC;
+        @include montserrat(500, 32px);
+        padding: 0 32px 32px;
+    }
+    &__button{
+        padding: 16px 32px;
+        border-radius: 32px;
+        @include montserrat(500, 16px);
+        color: #fff;
+        text-decoration: none;
+        background-color: #22c022;
+        border: none;
+        margin-left: 32px;
+        margin-top: 64px;
+    }
+}
