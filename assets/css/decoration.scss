@@ -5,29 +5,42 @@
         box-shadow: 0 0 10px rgba(0,0,0,.2);
     }
     &__header-nav{
-        ul{
-            list-style: none;
-        }
-        li{
-            color: #000;
-            padding-right: 32px;
-        }
-        a{
-            color: inherit;
-            text-decoration: none;
+        .header-nav{
+            &__header-menu{
+                list-style: none;
+            }
+            &__nav-element{
+                color: #000;
+                @include montserrat(500, 16px);
+                transition: all 200ms ease-in-out;
+                &:hover{
+                    color: #2688EC;
+                }
+            }
+            &__nav-link{
+                color: inherit;
+                text-decoration: none;
+            }
         }
     }
     &__social-media{
-        ul{
-            list-style: none;
-        }
-        li{
-            color: #000;
-            padding-left: 16px;
-        }
-        a{
-            color: inherit;
-            text-decoration: none;
+        .social-media{
+            &__header-menu{
+                list-style: none;
+            }
+            &__nav-element{
+                color: #000;
+            }
+            &__nav-link{
+                color: inherit;
+                text-decoration: none;
+            }
+            &__nav-icon{
+                width: 24px;
+                img{
+                    width: 100%;
+                }
+            }
         }
     }
 }

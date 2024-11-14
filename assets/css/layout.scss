@@ -5,6 +5,7 @@
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
+    position: fixed;
 
     &__header-bar {
         width: 100%;
@@ -12,19 +13,42 @@
         flex-flow: row nowrap;
         justify-content: space-between;
         align-items: center;
-        padding: 8px 32px;
+        padding: 8px 16px;
 
     }
 
     &__header-nav {
+        display: none;
+        @include full{
+            display: block;
+        }
+        @include desktop{
+            display: block;
+        }
+        @include laptop{
+            display: block;
+        }
+        ul{
+            padding-left: 16px;
+        }
         li {
             display: inline-block;
+            padding-right: 32px;
         }
     }
 
     &__social-media {
-        li {
-            display: inline-block;
+        .social-media{
+            &__header-menu{
+                display: flex;
+                flex-direction: row;
+                gap: 8px;
+                align-items: center;
+            }
+            &__nav-icon{
+                display: flex;
+                align-items: center;
+            }
         }
     }
 }

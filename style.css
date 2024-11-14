@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 html, body {
   padding: 0;
   margin: 0;
@@ -20,6 +21,7 @@ div, section, article, aside, footer, header, h1, h2, h3, h4, h5, h6, p, a, span
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
+  position: fixed;
 }
 .header__header-bar {
   width: 100%;
@@ -27,13 +29,42 @@ div, section, article, aside, footer, header, h1, h2, h3, h4, h5, h6, p, a, span
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 32px;
+  padding: 8px 16px;
+}
+.header__header-nav {
+  display: none;
+}
+@media screen and (min-width: 1440px) {
+  .header__header-nav {
+    display: block;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .header__header-nav {
+    display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header__header-nav {
+    display: block;
+  }
+}
+.header__header-nav ul {
+  padding-left: 16px;
 }
 .header__header-nav li {
   display: inline-block;
+  padding-right: 32px;
 }
-.header__social-media li {
-  display: inline-block;
+.header__social-media .social-media__header-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+.header__social-media .social-media__nav-icon {
+  display: flex;
+  align-items: center;
 }
 
 .wrapper {
@@ -50,27 +81,38 @@ div, section, article, aside, footer, header, h1, h2, h3, h4, h5, h6, p, a, span
   border-radius: 32px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-.header__header-nav ul {
+.header__header-nav .header-nav__header-menu {
   list-style: none;
 }
-.header__header-nav li {
+.header__header-nav .header-nav__nav-element {
   color: #000;
-  padding-right: 32px;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 200ms ease-in-out;
 }
-.header__header-nav a {
+.header__header-nav .header-nav__nav-element:hover {
+  color: #2688EC;
+}
+.header__header-nav .header-nav__nav-link {
   color: inherit;
   text-decoration: none;
 }
-.header__social-media ul {
+.header__social-media .social-media__header-menu {
   list-style: none;
 }
-.header__social-media li {
+.header__social-media .social-media__nav-element {
   color: #000;
-  padding-left: 16px;
 }
-.header__social-media a {
+.header__social-media .social-media__nav-link {
   color: inherit;
   text-decoration: none;
+}
+.header__social-media .social-media__nav-icon {
+  width: 24px;
+}
+.header__social-media .social-media__nav-icon img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
