@@ -1,0 +1,13 @@
+.button{
+    padding: 8px 16px;
+    border-radius: 32px;
+    color: $mainWhite;
+    background-color: $mainSelect;
+    @include trans(200ms);
+    font-size: 16px;
+    @include montserrat( 1rem, 500, $mainWhite !important);
+
+    &:hover{
+        background-color: $mainSelectHover;
+    }
+}

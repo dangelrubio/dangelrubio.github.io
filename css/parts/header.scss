@@ -1,0 +1,15 @@
+.header{
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    display: flex;
+    flex-flow: column nowrap;
+    z-index: 9999;
+    &__bar{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

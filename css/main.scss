@@ -1,0 +1,27 @@
+@import 'reset';
+@import 'fonts';
+@import 'variables';
+@import 'elements';
+.main-canvas{
+    background-color: #fafafa;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.wrapper{
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 2rem;
+    @include break_480{
+        padding: 0 1.5rem;
+    }
+}
+@import 'parts/header';
+@import 'parts/hello';
