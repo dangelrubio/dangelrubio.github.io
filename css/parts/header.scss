@@ -4,6 +4,8 @@
     background-color: #fff;
     display: flex;
     flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
     z-index: 9999;
     &__bar{
         width: 100%;
@@ -12,4 +14,61 @@
         justify-content: space-between;
         align-items: center;
     }
+    &__header-nav{
+        display: none;
+        @include break_1024{
+            display: block;
+        }
+        padding: 1rem 0;
+        list-style: none;
+        
+    }
+    .header-nav{
+        &__closed{
+            display: block;
+            @include break_1024{
+                display: none;
+            }
+        }
+        &__item{
+            display: inline-block;
+            margin-right: 2rem;
+            padding: .5rem 0;
+            transition: all 200ms ease-in-out;
+            position: relative;
+            &:hover{
+                color: $mainDark;
+            }
+        }
+        &__link{
+            @include montserrat(1rem, 500, $mainBlack);
+        }
+        
+    }
+    &__social-nav{
+        list-style: none;
+        padding: 1rem 0;
+    }
+    .social-nav{
+        &__item{
+            display: inline-block;
+            margin-left: 1rem;
+            padding: .5rem 0;
+            transition: all 200ms ease-in-out;
+        }
+        &__link{
+            font-size: 18px;
+            color: $mainBlack;
+            display: flex;
+            height: 100%;
+            align-items: center;
+        }
+    }
+}
+.social{
+    transition: all 200ms ease-in-out;
+}
+.social:hover{
+    color: $mainSelect !important;
+
 }

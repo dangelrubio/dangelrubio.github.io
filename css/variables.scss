@@ -1,13 +1,18 @@
 /*COLORES*/
 
 $mainWhite: #fafafa;
-$mainDark: #0A3D9C;
+$mainDark: #397af3;
 $mainSelect: #04df61;
 $mainSelectHover: #04be2c;
 $mainBlack: #020A18;
 
 @mixin break_480{
     @media screen and (min-width: 480px){
+        @content;
+    }
+}
+@mixin break_1024{
+    @media screen and (min-width: 1024px){
         @content;
     }
 }
@@ -25,6 +30,12 @@ $mainBlack: #020A18;
 /*FONTS*/
 
 @mixin montserrat( $size, $weight, $color){
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+@mixin bootrstap( $size, $weight, $color){
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: $size;
     font-weight: $weight;
