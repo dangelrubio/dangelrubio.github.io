@@ -7,6 +7,8 @@
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    background-image: url('assets/img/fondoweb.png');
+    @include bg( right, cover, fixed, no-repeat);
 
     &__content{
         width: 100%;

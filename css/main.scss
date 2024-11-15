@@ -9,10 +9,7 @@
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
-    padding: 0 2rem;
-    @include break_480{
-        padding: 0 1.5rem;
-    }
+    
 }
 .wrapper{
     width: 100%;
@@ -21,5 +18,9 @@
     flex-flow: column;
     justify-content: flex-start;
     align-items: center;
+    padding: 0 2rem;
+    @include break_480{
+        padding: 0 1.5rem;
+    }
 }
 @import 'parts/hello';
