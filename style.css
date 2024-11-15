@@ -188,6 +188,12 @@ a {
   font-weight: 700;
   color: #020A18;
   text-transform: uppercase;
+  background: linear-gradient(45deg, #020A18 40%, #4c8bff 60%, #020A18 100%);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 6s ease infinite;
 }
 @media screen and (min-width: 480px) {
   .hello__title {
@@ -209,6 +215,15 @@ a {
     font-size: 1.5rem;
     font-weight: 500;
     color: #397af3;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 200%;
   }
 }
 

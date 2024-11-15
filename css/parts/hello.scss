@@ -32,6 +32,12 @@
     &__title{
         @include montserrat(2rem, 700, $mainBlack);
         text-transform: uppercase;
+        background: $textGradient;
+        background-size: 200%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradient 6s ease infinite;
         @include break_480{
             @include montserrat(3rem, 700, $mainBlack);
         }

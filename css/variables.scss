@@ -5,6 +5,7 @@ $mainDark: #397af3;
 $mainSelect: #04df61;
 $mainSelectHover: #04be2c;
 $mainBlack: #020A18;
+$textGradient: linear-gradient( 45deg, #020A18 40%, #4c8bff 60%, #020A18 100% );
 
 @mixin break_480{
     @media screen and (min-width: 480px){
