@@ -1,0 +1,13 @@
+body, html{
+    padding: 0; margin: 0;
+}
+div, span, aside, article, section, table, tr, td, ul, li, ol, form, input, label, h1, h2, h3, h4, h5, h6, p, a, small, i, img, video, button{
+    padding: 0; margin: 0; box-sizing: border-box;
+}
+img{
+    border: 0;
+}
+a{
+    color: inherit !important;
+    text-decoration: none;
+}

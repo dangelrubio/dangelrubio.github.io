@@ -1,6 +1,25 @@
-//Colores
+/*COLORES*/
 
 $mainWhite: #fafafa;
 $mainDark: #3b23ff;
 $mainSelect: #04df61;
+$mainSelectHover: #04be2c;
 $mainBlack: #04011c;
+
+@mixin break_480{
+    @media screen and (min-width: 480px){
+        @content;
+    }
+}
+@mixin trans($speed){
+    transition: all $speed ease-in-out;
+}
+
+/*FONTS*/
+
+@mixin montserrat( $size, $weight, $color){
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}

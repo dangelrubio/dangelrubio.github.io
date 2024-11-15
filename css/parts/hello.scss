@@ -1,0 +1,42 @@
+/*HELLO*/
+
+.hello {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    &__content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+    &__info{
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: .5rem;
+    }
+    &__title{
+        @include montserrat(2rem, 700, $mainBlack);
+        text-transform: uppercase;
+        @include break_480{
+            @include montserrat(3rem, 700, $mainBlack);
+        }
+    }
+    &__subtitle{
+        @include montserrat(1.125rem, 500, $mainDark);
+        @include break_480{
+            @include montserrat(1.5rem, 500, $mainDark);
+        }
+    }
+
+  }
