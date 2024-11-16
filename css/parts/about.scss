@@ -1,17 +1,14 @@
-/*HELLO*/
-
-.hello {
+.about{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     position: sticky;
     top: 0;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    background-image: url('assets/img/fondoweb.png');
-    @include bg( right, cover, fixed, no-repeat);
-
+    background-color: $mainWhite;
+    box-shadow: 0 0 20px $mainBlack + #{33}, 0 0 60px  $mainDark + #{33};
     &__content{
         width: 100%;
         height: 100%;
@@ -27,20 +24,24 @@
         flex-flow: column nowrap;
         justify-content: flex-start;
         align-items: flex-start;
-        gap: .5rem;
+        gap: 1.2rem;
     }
     &__title{
         @include montserrat(2rem, 700, $mainBlack);
-        text-transform: uppercase;
-        @include break_480{
-            @include montserrat(3rem, 700, $mainBlack);
+    }
+    &__text{
+        @include montserrat(1rem, 500, $mainBlack);
+        line-height: 1.2rem;
+        @include break_1024{
+            @include montserrat(1.2rem, 500, $mainBlack);
+            line-height: 1.8rem;
         }
     }
-    &__subtitle{
-        @include montserrat(1.125rem, 500, $mainDark);
-        @include break_480{
-            @include montserrat(1.5rem, 500, $mainDark);
-        }
+    strong{
+        @include montserrat(inherit, 600, $mainDark);
+        line-height: 1.2rem;
     }
-
-  }
+    .call{
+        text-decoration: underline;
+    }
+}
