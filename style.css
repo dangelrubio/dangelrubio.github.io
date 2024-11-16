@@ -131,6 +131,7 @@ a {
   width: 28px;
   height: 3px;
   background-color: #020A18;
+  transition: all 200ms ease-in-out;
 }
 .header .header-nav__item {
   display: inline-block;
@@ -177,6 +178,30 @@ a {
 
 .menu-is-open {
   left: 0 !important;
+}
+
+.trigger-is-open {
+  justify-content: center;
+  position: relative;
+}
+.trigger-is-open .closed__bar:first-child {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: rotateZ(-45deg);
+  transform-origin: center;
+  width: 2rem;
+}
+.trigger-is-open .closed__bar:nth-child(2) {
+  display: none;
+}
+.trigger-is-open .closed__bar:last-child {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: rotateZ(45deg);
+  transform-origin: center;
+  width: 2rem;
 }
 
 /*HELLO*/

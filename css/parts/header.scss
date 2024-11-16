@@ -62,6 +62,7 @@
                     width: 28px;
                     height: 3px;
                     background-color: $mainBlack;
+                    transition: all 200ms ease-in-out;
                 }
             }
         }
@@ -110,4 +111,32 @@
 }
 .menu-is-open{
     left: 0 !important;
+}
+.trigger-is-open{
+    justify-content: center;
+    position: relative;
+    .closed__bar:first-child{
+        position: absolute;
+        top: calc(50%);
+        left: 0;
+        transform: rotateZ(-45deg);
+        transform-origin: center;
+        width: 2rem;
+        
+
+    }
+    .closed__bar:nth-child(2){
+        display: none;
+    }
+    .closed__bar:last-child{
+        position: absolute;
+        top: calc(50%);
+        left: 0;
+        transform: rotateZ(45deg);
+        transform-origin: center;
+        width: 2rem;
+        
+
+    }
+    
 }
