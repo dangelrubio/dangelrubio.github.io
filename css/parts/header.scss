@@ -21,10 +21,33 @@
         }
         padding: 1rem 0;
         list-style: none;
-        
+        &--mobile{
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: -100%;
+            background-color: $mainWhite;
+            z-index: 999;
+            transition: all 200ms ease-in-out;
+            .header-nav{
+                &__item{
+                    display: block;
+                }
+                &__link{
+                    @include montserrat(1.8rem !important, 500, $mainBlack);
+                }
+            }
+        }
     }
     .header-nav{
         &__closed{
+            z-index: 99999;
             padding: 1rem 0;
             display: flex;
             flex-direction: column;
@@ -60,6 +83,7 @@
     &__social-nav{
         list-style: none;
         padding: 1rem 0;
+        z-index: 9999;
     }
     .social-nav{
         &__item{
@@ -83,4 +107,7 @@
 .social:hover{
     color: $mainSelect !important;
 
+}
+.menu-is-open{
+    left: 0 !important;
 }
