@@ -72,7 +72,7 @@ body, html {
   top: 0;
   left: -100%;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #020A18;
   transition: all 400ms ease-in-out;
   display: flex;
