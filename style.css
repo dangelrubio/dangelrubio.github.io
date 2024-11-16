@@ -38,6 +38,10 @@ a {
   background-color: #04be2c;
 }
 
+body, html {
+  scroll-behavior: smooth;
+}
+
 .main-canvas {
   background-color: #fafafa;
   width: 100%;
@@ -49,6 +53,7 @@ a {
 
 .wrapper {
   width: 100%;
+  height: 100%;
   max-width: 1100px;
   display: flex;
   flex-flow: column;
@@ -59,6 +64,54 @@ a {
 @media screen and (min-width: 480px) {
   .wrapper {
     padding: 0 1.5rem;
+  }
+}
+
+.call-block {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: #020A18;
+  transition: all 400ms ease-in-out;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.call-block__content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.call-block__title {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fafafa;
+}
+.call-block__text {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #397af3;
+  line-height: 22px;
+}
+.call-block__text strong {
+  color: #fafafa !important;
+}
+@media screen and (min-width: 1024px) {
+  .call-block__text {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #397af3;
+    line-height: 28px;
   }
 }
 
@@ -269,7 +322,7 @@ a {
 .about {
   width: 100%;
   min-height: 100vh;
-  position: fixed;
+  position: sticky;
   top: 0;
   display: flex;
   flex-flow: column nowrap;
@@ -330,6 +383,15 @@ a {
 
 .bright-fx {
   background: linear-gradient(45deg, #020A18 40%, #4c8bff 60%, #020A18 100%);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 6s ease infinite;
+}
+
+.bright-fx-2 {
+  background: linear-gradient(45deg, #fafafa 40%, #4c8bff 60%, #fafafa 100%);
   background-size: 200%;
   background-clip: text;
   -webkit-background-clip: text;

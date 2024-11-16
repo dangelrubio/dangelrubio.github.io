@@ -1,6 +1,8 @@
 let trigger = document.querySelector('#nav-trigger');
 let mobileMenu = document.querySelector('#mobile-menu');
 let menuItem = document.querySelector('.header__header-nav--mobile .header-nav__link');
+let callList1 = document.querySelector('#number-1');
+let triggerCallList1 = document.querySelector('#number-1-trigger');
 let menuStatus = 1;
 
 trigger.addEventListener('click', () =>{
@@ -30,4 +32,11 @@ menuItem.addEventListener('click', () =>{
         trigger.classList.remove('trigger-is-open');
         menuStatus = 1;
     }
+});
+
+triggerCallList1.addEventListener('click', () => {
+    callList1.style.left = "0";
+});
+callList1.addEventListener('click', () => {
+    callList1.style.left = "-100%";
 });

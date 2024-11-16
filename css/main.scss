@@ -2,6 +2,9 @@
 @import 'fonts';
 @import 'variables';
 @import 'elements';
+body, html{
+    scroll-behavior: smooth;
+}
 .main-canvas{
     background-color: #fafafa;
     width: 100%;
@@ -13,6 +16,7 @@
 }
 .wrapper{
     width: 100%;
+    height: 100%;
     max-width: 1100px;
     display: flex;
     flex-flow: column;
@@ -23,6 +27,43 @@
         padding: 0 1.5rem;
     }
 }
+.call-block{
+    position:fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: $mainBlack;
+    transition: all 400ms ease-in-out;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    &__content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+    &__title{
+        @include montserrat(24px, 600, $mainWhite);
+    }
+    &__text{
+        @include montserrat(1rem, 500, $mainDark);
+        line-height: 22px;
+        strong{
+            color: $mainWhite !important;
+        }
+        @include break_1024{
+            @include montserrat(1.2rem, 500, $mainDark);
+            line-height: 28px;
+        }
+    }
+}
+
 @import 'parts/header';
 @import 'parts/hello';
 @import 'parts/about';

@@ -6,6 +6,14 @@
     -webkit-text-fill-color: transparent;
     animation: gradient 6s ease infinite;
 }
+.bright-fx-2{
+    background: $textGradient2;
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 6s ease infinite;
+}
 @keyframes gradient {
     0% {
         background-position: 0%;
