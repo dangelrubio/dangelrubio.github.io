@@ -62,6 +62,10 @@ body, html{
             line-height: 28px;
         }
     }
+    &__back{
+        @include montserrat(1.2rem, 500, $mainWhite);
+        margin-top: 2rem;
+    }
 }
 
 @import 'parts/header';

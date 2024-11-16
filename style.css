@@ -114,6 +114,13 @@ body, html {
     line-height: 28px;
   }
 }
+.call-block__back {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fafafa;
+  margin-top: 2rem;
+}
 
 .header {
   width: 100%;
