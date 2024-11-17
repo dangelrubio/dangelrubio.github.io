@@ -7,6 +7,7 @@ body, html{
 }
 .main-canvas{
     background-color: #fafafa;
+    position: relative;
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
@@ -49,11 +50,11 @@ body, html{
         gap: 1.5rem;
     }
     &__title{
-        @include montserrat(24px, 600, $mainWhite);
+        @include montserrat(20px, 600, $mainWhite);
     }
     &__text{
-        @include montserrat(1rem, 500, $mainDark);
-        line-height: 22px;
+        @include montserrat(.8rem, 400, $mainDark);
+        line-height: 20px;
         strong{
             color: $mainWhite !important;
         }
