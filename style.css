@@ -69,7 +69,7 @@ body, html {
 }
 
 .call-block {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
@@ -82,7 +82,6 @@ body, html {
   align-items: center;
 }
 .call-block__content {
-  overflow-x: scroll;
   padding: 64px 0;
   width: 100%;
   height: 100%;
@@ -91,11 +90,6 @@ body, html {
   justify-content: center;
   align-items: flex-start;
   gap: 1.5rem;
-}
-@media screen and (min-width: 1024px) {
-  .call-block__content {
-    overflow: auto;
-  }
 }
 .call-block__title {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
